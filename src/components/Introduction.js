@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading, Text, Image, Flex, Divider } from '@chakra-ui/react';
+import { Box, Heading, Text, Image, Flex, Divider, Link } from '@chakra-ui/react';
 import { EmailIcon } from '@chakra-ui/icons'
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
@@ -39,42 +39,53 @@ function Introduction() {
                     <Heading>Contacto</Heading>
 
                     <Box mt={5} p={5} overflowX="auto">
-                        <Flex
-                            wrap="wrap"
-                            justify="center"
-                            gap={4}
-                        >
-                            {[{
-                                icon: <MdEmail size={50} />,
-                                color: "whiteAlpha.700",
-                                bg: "blackAlpha.700"
-                            }, {
-                                icon: <FaLinkedinIn size={50} />,
-                                color: "white",
-                                bg: "green.800"
-                            }, {
-                                icon: <FaGithub size={50} />,
-                                color: "white",
-                                bg: "gray.800"
-                            }].map(({ icon, color, bg }, idx) => (
-                                <Box
-                                    key={idx}
-                                    flex="1 1 250px"
-                                    color={color}
-                                    bgColor={bg}
-                                    borderWidth={2}
-                                    borderRadius="3xl"
-                                    p={6}
-                                    minW="250px"
-                                >
-                                    <Flex direction="column" height="100%" justify="space-between">
-                                        <Box>{icon}</Box>
-                                        <Text as="b" fontSize="md" textAlign="center" mt={2}>
-                                            bruno.marin@outlook.es
-                                        </Text>
-                                    </Flex>
-                                </Box>
-                            ))}
+                        <Flex wrap="wrap" justify="center" gap={4}>
+                            <Box
+                                flex="1 1 250px"
+                                color="whiteAlpha.700"
+                                bgColor="blackAlpha.700"
+                                borderWidth={2}
+                                borderRadius="3xl"
+                                p={6}
+                                minW="250px"
+                            >
+                                <Flex direction="column" height="100%" justify="space-between">
+                                    <Box><MdEmail size={50} /></Box>
+                                    <Text as="b" fontSize="md" textAlign="center" mt={2}>
+                                        bruno.marin@outlook.es
+                                    </Text>
+                                </Flex>
+                            </Box>
+
+                            <Box
+                                flex="1 1 250px"
+                                color="white"
+                                bgColor="green.800"
+                                borderWidth={2}
+                                borderRadius="3xl"
+                                p={6}
+                                minW="250px"
+                            >
+                                <Flex direction="column" height="100%" justify="space-between">
+                                    <Box><FaLinkedinIn size={50} /></Box>
+                                       <Link href='https://www.linkedin.com/in/bruno-marín-4b852a352' isExternal>Mi perfil</Link>
+                                </Flex>
+                            </Box>
+
+                            <Box
+                                flex="1 1 250px"
+                                color="white"
+                                bgColor="gray.800"
+                                borderWidth={2}
+                                borderRadius="3xl"
+                                p={6}
+                                minW="250px"
+                            >
+                                <Flex direction="column" height="100%" justify="space-between">
+                                    <Box><FaGithub size={50} /></Box>
+                                    <Link href='https://github.com/Bruno-AltoCapo' isExternal>Mi perfil</Link>
+                                </Flex>
+                            </Box>
                         </Flex>
                     </Box>
                 </Box>

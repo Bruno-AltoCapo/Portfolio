@@ -63,15 +63,25 @@ function AboutMe() {
               <Box w={{ base: "100%", md: "33%" }}>
                 <Experience />
               </Box>
-              <Center height='800px'>
+
+              <Center
+                height='800px'
+                display={{ base: "none", md: "flex" }}
+              >
                 <Divider orientation='vertical' />
               </Center>
+
               <Box w={{ base: "100%", md: "33%" }}>
                 <Education />
               </Box>
-              <Center height='800px'>
+
+              <Center
+                height='800px'
+                display={{ base: "none", md: "flex" }}
+              >
                 <Divider orientation='vertical' />
               </Center>
+
               <Box w={{ base: "100%", md: "33%" }}>
                 <Description />
               </Box>

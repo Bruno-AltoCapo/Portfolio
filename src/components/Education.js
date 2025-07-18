@@ -45,7 +45,7 @@ function Education() {
                     Portal web donde los empleados registran sus horarios de entrada y salida quedando guardado en una base de datos.
                 </Text>
 
-                <Link color='green.400'>Repositorio de GitHub</Link>
+                <Link color='green.400' href='https://github.com/ValenaConsulting/FichajeApp' isExternal>Repositorio de GitHub</Link>
             </Box>
 
             <Box
@@ -72,7 +72,7 @@ function Education() {
                     que ya usen la plataforma.
                 </Text>
 
-                <Link color='green.400'>Repositorio de GitHub</Link>
+                <Link color='green.400' href='https://github.com/Bruno-AltoCapo/LineCode' isExternal>Repositorio de GitHub</Link>
             </Box>
 
         </Box>
